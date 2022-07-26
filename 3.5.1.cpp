@@ -6,7 +6,6 @@ protected:
 	int sides_count=0;
 	string name;
 public:
-	Figure(){}
 	int get_sides_count() {
 		return sides_count;
 	}
@@ -27,7 +26,7 @@ public:
 	string get_name() {
 		return name;
 	}
-	Triangle(string name1,int a) :Figure() {
+	Triangle(string name1,int a) :Figure("Фигура", 0) {
 		name = name1;
 		sides_count = a;
 	}
@@ -41,7 +40,7 @@ public:
 	string get_name() {
 		return name;
 	}
-	Quadrangle(string name1, int a) :Figure() {
+	Quadrangle(string name1, int a) :Figure("Фигура", 0) {
 		name = name1;
 		sides_count = a;
 	}
